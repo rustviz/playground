@@ -6,8 +6,8 @@
     <title>RustViz playground</title>
     <link rel="icon" href="data:;base64,=" />
     <script src="ex-assets/helpers.js"></script>
-    <script type="module" crossorigin src="/playground/assets/index-DlqT9RSz.js"></script>
-    <link rel="stylesheet" crossorigin href="/playground/assets/index-C7pY_Gnq.css">
+    <script type="module" crossorigin src="/playground/assets/index-CqBvbnVk.js"></script>
+    <link rel="stylesheet" crossorigin href="/playground/assets/index-GUUIxdM5.css">
   </head>
   <body>
     <h1>RustViz Playground</h1>
@@ -48,6 +48,12 @@
       </p>
     </div>
 
+    <!-- React mounts the example-picker dropdown here via createPortal
+         (see src/App.tsx). It needs to live above the editor in DOM
+         order, but our React app's main root is below the editor for
+         legacy reasons, so the portal lets us keep one App component
+         and still place the picker above. -->
+    <div id="example-picker"></div>
     <div id="editor"></div>
     <div id="root"></div>
   </body>
